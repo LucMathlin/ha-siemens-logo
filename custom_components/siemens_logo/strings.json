@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Siemens Logo PLC",
+        "description": "Enter the connection details for your Siemens Logo 8 PLC. Adjust the number of inputs and outputs to match your hardware configuration (base unit + expansion modules).",
+        "data": {
+          "name": "PLC Name (e.g. Logo-1)",
+          "host": "IP Address",
+          "port": "Modbus TCP Port",
+          "num_inputs": "Number of Discrete Inputs (I)",
+          "num_outputs": "Number of Digital Outputs (Q)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the PLC. Check the IP address and port.",
+      "cannot_communicate": "Connected but cannot read from the PLC. Check Modbus server is enabled on the Logo.",
+      "unknown": "Unexpected error. Check the logs for details."
+    },
+    "abort": {
+      "already_configured": "A PLC with this IP and port is already configured."
+    }
+  }
+}
